@@ -1,0 +1,72 @@
+
+@keyframes brilho {
+    0% { 
+       
+        text-shadow: 0 0 5px #7B68EE, 0 0 10px #4B0082, 0 0 15px #7B68EE;
+    }
+    50% { 
+        
+        text-shadow: 0 0 20px #7B68EE, 0 0 30px #4B0082, 0 0 40px #7B68EE;
+    }
+    100% { 
+       
+        text-shadow: 0 0 5px #7B68EE, 0 0 10px #4B0082, 0 0 15px #7B68EE;
+    }
+}
+
+
+ul {
+    font-size: 5px;
+    list-style-type: square; 
+    padding: 20px; 
+    background-color: #f3f4; 
+    border-radius: 10px; 
+    animation: brilho 2s infinite alternate; 
+    color: black;
+    font-weight: lighter;
+}
+
+
+li {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 1.2rem; 
+    margin: 10px 0; 
+    padding: 10px; 
+    background-color: #a9a9a9; 
+    border: 1px solid #7B68EE; 
+    border-radius: 5px; 
+    animation: brilho 2s infinite alternate; 
+}
+
+
+li:hover {
+    background-color: #7B68EE;
+    cursor: pointer; 
+    transition: 0.3s ease;
+}
+
+
+ li:nth-child(3) {
+    background-color: #f8d7; 
+    color: #721c24; 
+    font-weight: bold; 
+} 
+
+body {
+    background-color: #696969; 
+    color: #f8f8f8;
+}
+
+.box {
+   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size: 1.2rem; 
+    margin: 10px 0; 
+    padding: 10px; 
+    background-color: #a9a9a9; 
+    border: 1px solid #7B68EE; 
+    border-radius: 5px; 
+    animation: brilho 2s infinite alternate; 
+    cursor: pointer;
+}
+
