@@ -1,72 +1,160 @@
-
+/* Animação que cria um brilho nos textos */
 @keyframes brilho {
     0% { 
-       
+        /* Definindo o brilho inicial do texto */
         text-shadow: 0 0 5px #7B68EE, 0 0 10px #4B0082, 0 0 15px #7B68EE;
     }
     50% { 
-        
+        /* Aumentando o brilho na metade da animação */
         text-shadow: 0 0 20px #7B68EE, 0 0 30px #4B0082, 0 0 40px #7B68EE;
     }
     100% { 
-       
+        /* Retornando ao brilho inicial */
         text-shadow: 0 0 5px #7B68EE, 0 0 10px #4B0082, 0 0 15px #7B68EE;
     }
 }
 
-
+/* Estilo para a lista não ordenada (ul) */
 ul {
-    font-size: 5px;
-    list-style-type: square; 
-    padding: 20px; 
-    background-color: #f3f4; 
-    border-radius: 10px; 
-    animation: brilho 2s infinite alternate; 
-    color: black;
-    font-weight: lighter;
+    font-size: 5px; /* Tamanho da fonte */
+    list-style-type: square; /* Estilo de lista quadrada */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f3f4; /* Cor de fundo com opacidade */
+    border-radius: 10px; /* Bordas arredondadas */
+    animation: brilho 2s infinite alternate; /* Animação de brilho */
+    color: black; /* Cor do texto */
+    font-weight: lighter; /* Peso da fonte mais leve */
 }
 
-
+/* Estilo para os itens da lista (li) */
 li {
-    font-family: Arial, Helvetica, sans-serif; 
-    font-size: 1.2rem; 
-    margin: 10px 0; 
-    padding: 10px; 
-    background-color: #a9a9a9; 
-    border: 1px solid #7B68EE; 
-    border-radius: 5px; 
-    animation: brilho 2s infinite alternate; 
+    font-family: Arial, Helvetica, sans-serif; /* Tipo de fonte */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    margin: 10px 0; /* Espaçamento entre os itens */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #a9a9a9; /* Cor de fundo */
+    border: 1px solid #7B68EE; /* Borda do item */
+    border-radius: 5px; /* Bordas arredondadas */
+    animation: brilho 2s infinite alternate; /* Animação de brilho */
 }
 
-
+/* Estilo para os itens da lista ao passar o mouse */
 li:hover {
-    background-color: #7B68EE;
-    cursor: pointer; 
-    transition: 0.3s ease;
+    background-color: #7B68EE; /* Cor de fundo ao passar o mouse */
+    cursor: pointer; /* Cursor tipo pointer */
+    transition: 0.3s ease; /* Transição suave */
 }
 
+/* Estilo para o terceiro item da lista */
+li:nth-child(3) {
+    background-color: #f8d7; /* Cor de fundo especial para o terceiro item */
+    color: #721c24; /* Cor do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
 
- li:nth-child(3) {
-    background-color: #f8d7; 
-    color: #721c24; 
-    font-weight: bold; 
-} 
-
+/* Estilo do corpo da página */
 body {
-    background-color: #696969; 
-    color: #f8f8f8;
+    display: grid; /* Usando grid para layout */
+    grid-template-columns: 1fr; /* Uma única coluna */
+    gap: 20px; /* Espaçamento entre os itens */
+    background-color: #696969; /* Cor de fundo */
+    color: #f8f8f8; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    font-family: Arial, sans-serif; /* Fonte do corpo */
 }
 
+/* Estilo das caixas de conteúdo (box) */
 .box {
-   
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-    font-size: 1.2rem; 
-    margin: 10px 0; 
-    padding: 10px; 
-    background-color: #a9a9a9; 
-    border: 1px solid #7B68EE; 
-    border-radius: 5px; 
-    animation: brilho 2s infinite alternate; 
-    cursor: pointer;
+    text-align: center; /* Alinhamento do texto ao centro */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Fonte para o conteúdo */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    margin: 10px 0; /* Espaçamento entre as caixas */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #a9a9a9; /* Cor de fundo */
+    border: 1px solid #7B68EE; /* Borda do conteúdo */
+    border-radius: 5px; /* Bordas arredondadas */
+    animation: brilho 2s infinite alternate; /* Animação de brilho */
+    cursor: pointer; /* Cursor tipo pointer */
 }
+
+/* Estilo do main */
+main {
+    display: flex; /* Usando flexbox para layout */
+    display: -moz-grid; /* Antiga sintaxe de grid para Firefox */
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas de tamanho igual */
+    gap: 5px; /* Espaçamento entre os itens */
+    max-width: 1500px; /* Largura máxima */
+    width: 100%; /* Largura total */
+    flex-direction: column; /* Direção da flexbox invertida */
+    padding: 20px; /* Espaçamento interno */
+    align-items: center; /* Alinhamento central dos itens */
+    text-align: center; /* Alinhamento do texto */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo das seções dentro do main */
+section {
+    background-color: rgb(78, 78, 78); /* Cor de fundo preta */
+    width: 80%; /* Largura da seção */
+    max-width: 600px; /* Largura máxima da seção */
+    margin: 20px 0; /* Margem entre as seções */
+}
+
+/* Estilo para os títulos dentro das seções */
+h4 {
+    font-size: 1.5em; /* Tamanho do título */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    text-align: center; /* Alinhamento central do título */
+}
+
+/* Estilo para os parágrafos dentro das seções */
+p {
+    font-size: 1.1em; /* Tamanho da fonte */
+    line-height: 1.5; /* Espaçamento entre as linhas */
+}
+
+/* Estilo dos links */
+a {
+    color: #007bff; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Deixa o texto do link em negrito */
+}
+
+/* Estilo dos links ao passar o mouse */
+a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilo do container dos botões */
+.button-container {
+  display: table-row; /* Ativando o grid para os botões */
+  grid-template-columns: repeat(3, 1fr); /* Definindo 3 colunas de tamanho igual */
+  gap: 10px; /* Espaçamento entre os botões */
+  justify-items: center; /* Centralizando os itens dentro do grid */
+  align-items: center; /* Alinhando os itens verticalmente */
+  padding: 20px; /* Espaçamento interno */
+  max-width: 500px; /* Largura máxima */
+  margin: 0 auto; /* Centralizando o container na página */
+}
+
+/* Estilo para os botões */
+button {
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  background-color: #3498db; /* Cor de fundo do botão */
+  color: white; /* Cor do texto */
+  border: none; /* Removendo borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor tipo pointer */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo para os botões ao passar o mouse */
+button:hover {
+  background-color: #2980b9; /* Mudando a cor de fundo ao passar o mouse */
+}
+
+.footer {
+    text-align: center;
+}
+
 

@@ -2,22 +2,34 @@
 
 <html lang="pt-br">
   <head>
+    <!-- Meta charset UTF-8 para suportar caracteres especiais -->
     <meta charset="UTF-8" />
 
+    <!-- Meta tag para tornar o site responsivo em diferentes dispositivos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    
+    <!-- Título da página que aparece na aba do navegador -->
     <title>Portifólio</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- Link para o Bootstrap para estilização rápida -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <!-- Link para o arquivo de estilo personalizado -->
+    <link  rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <!-- Cabeçalho da página -->
     <header>
+      <!-- Tabela usada para organizar a estrutura do cabeçalho -->
       <table width="100%">
         <tr>
+          <!-- Nome do usuário alinhado à esquerda -->
           <td>
             <h1>Daniel Abecassis Figueiredo</h1>
           </td>
 
+          <!-- Caixa de pesquisa alinhada à direita -->
           <td style="text-align: right">
             <input type="text" placeholder="Pesquiar..." />
           </td>
@@ -25,70 +37,84 @@
       </table>
     </header>
 
-    <center>
+    <!-- Contêiner de botões de navegação -->
+    <div class="button-container">
+      <!-- Botões para navegação entre diferentes seções -->
       <button type="button" class="btn btn-Home">Home</button>
-
       <button type="button" class="btn btn-Sobre">Sobre</button>
-
       <button type="button" class="btn btn-Serviços">Serviços</button>
-
       <button type="button" class="btn btn-Resumo">Resumo</button>
-      <button type="button" class="btn btn-Resumo">Github</button>
-    </center>
+      <button type="button" class="btn btn-Github">Github</button>
+    </div>
 
-    <center>
-      <main class="container">
-        <section class="box">HTML</section>
+    <!-- Seções principais de conteúdo -->
+    <main class="container">
+      <!-- Caixa de conteúdo para HTML -->
+      <section class="box">HTML</section>
 
-        <section class="box">CSS</section>
+      <!-- Caixa de conteúdo para CSS -->
+      <section class="box">CSS</section>
 
-        <section class="box">Node.Js</section>
-      </main>
-    </center>
-
-    <main>
-      <center><h2>Seja Bem-Vindos!</h2></center>
-
-      <center><h3>o que você irá encontrar neste Portifólio</h3></center>
-
-      <section>
-        <center><h4>HTML</h4></center>
-
-        <p>
-          HTML é uma série de tags que descrevem as diferentes partes de uma
-          página da web, como títulos, parágrafos, imagens e links. Ao usar
-          essas tags, você pode criar uma estrutura hierárquica que torna mais
-          fácil para os mecanismos de pesquisa e humanos entenderem o conteúdo
-          da sua página..<a href="#">Leia mais</a>
-        </p>
-      </section>
-
-      <section>
-        <center><h4>CSS</h4></center>
-
-        <p>
-          CSS (Folha de Estilo em Cascata) é o código que você usa para dar
-          estilo à sua página Web. CSS básico apresenta tudo que você precisa
-          para começar. Responderemos a perguntas do tipo: Como mudo meu texto
-          para preto ou vermelho? Como faço para que meu conteúdo apareça em
-          determinados lugares na tela? Como decoro minha página com imagens e
-          cores de fundo?<a href="#">Leia mais</a>
-        </p>
-      </section>
+      <!-- Caixa de conteúdo para Node.js -->
+      <section class="box">Node.Js</section>
     </main>
 
+    <!-- Seção de boas-vindas -->
+    <main>
+      <h2>Sejam Bem-Vindos!</h2>
+
+      <!-- Subtítulo explicando sobre o portfólio -->
+      <ce><h3>Aqui você encontra tudo sobre o meu Portifólio</h3>
+
+      <!-- Seção de links para mais detalhes -->
+      <main>
+        <section id="html">
+            <!-- Título da seção HTML -->
+            <h4>HTML</h4>
+            <p>
+                <!-- Descrição sobre o HTML e link para mais informações -->
+                HTML é uma série de tags que descrevem as diferentes partes de uma
+                página da web, como títulos, parágrafos, imagens e links. Ao usar
+                essas tags, você pode criar uma estrutura hierárquica que torna mais
+                fácil para os mecanismos de pesquisa e humanos entenderem o conteúdo
+                da sua página... 
+                <a href="html.html">Leia mais</a>
+            </p>
+        </section>
+    
+        <section id="css">
+            <!-- Título da seção CSS -->
+            <h4>CSS</h4>
+            <p>
+                <!-- Descrição sobre o CSS e link para mais informações -->
+                CSS (Folha de Estilo em Cascata) é o código que você usa para dar
+                estilo à sua página Web. CSS básico apresenta tudo que você precisa
+                para começar. Responderemos a perguntas do tipo: Como mudo meu texto
+                para preto ou vermelho? Como faço para que meu conteúdo apareça em
+                determinados lugares na tela? Como decoro minha página com imagens e
+                cores de fundo? 
+                <a href="css.html">Leia mais</a>
+            </p>
+        </section>
+      </main>
+      
+    <!-- Título da seção Links Rápidos -->
     <h1>Links Rápidos</h1>
 
+    <!-- Lista de links rápidos (ainda sem links ativos) -->
     <ul>
       <li class="item1">Portifólio</li>
     </ul>
 
+    <!-- Rodapé com informações do autor -->
     <footer>
-      <center>
+      <!-- Centralização do conteúdo do rodapé -->
+      
+        <!-- Informações sobre o autor -->
         <p>@dan_abecassis</p>
         <p>Daniel Abecassis Figueiredo</p>
         <p>&copy; 2025. Todos os direitos reservados.</p>
-      </center>
+      
     </footer>
   </body>
 </html>
