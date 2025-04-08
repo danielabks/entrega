@@ -28,7 +28,7 @@ ul {
 
 /* Estilo para os itens da lista (li) */
 li {
-    font-family: Arial, Helvetica, sans-serif; /* Tipo de fonte */
+    font-family:  Helvetica, sans-serif; /* Tipo de fonte */
     font-size: 1.2rem; /* Tamanho da fonte */
     margin: 10px 0; /* Espaçamento entre os itens */
     padding: 10px; /* Espaçamento interno */
@@ -66,7 +66,7 @@ body {
 /* Estilo das caixas de conteúdo (box) */
 .box {
     text-align: center; /* Alinhamento do texto ao centro */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Fonte para o conteúdo */
+    font-family: Open Sans, sans-serif; /* Fonte para o conteúdo */
     font-size: 1.2rem; /* Tamanho da fonte */
     margin: 10px 0; /* Espaçamento entre as caixas */
     padding: 10px; /* Espaçamento interno */
@@ -100,17 +100,47 @@ section {
     margin: 20px 0; /* Margem entre as seções */
 }
 
-/* Estilo para os títulos dentro das seções */
-h4 {
-    font-size: 1.5em; /* Tamanho do título */
+section h1 {
+    font-size: 2.5rem; /* Tamanho do título */
+    font-family:'Montserrat', sans-serif; /* Fonte para o conteúdo */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    text-align: center; /* Alinhamento do texto */
+    align-items: center; /* Alinhamento central dos itens */
+}
+
+h2 {
+    font-size: 2.5rem; /* Tamanho do título */
+    font-family: 'Raleway', sans-serif;
     margin-bottom: 10px; /* Espaço abaixo do título */
     text-align: center; /* Alinhamento central do título */
+    align-items: center; /* Alinhamento central dos itens */
 }
+
+h3 {
+    font-family: 'Raleway', sans-serif; /* Define a fonte utilizada para o texto como 'Raleway', com uma alternativa sans-serif caso 'Raleway' não esteja disponível */
+    text-align: center; /* Alinhamento central do título */
+    font-weight: 500; /* Define o peso da fonte, controlando a espessura das letras */
+    font-size: 1.4rem; /* Tamanho do título */
+}
+
+/* Estilo para os títulos dentro das seções */
+h4 {
+    font-family: 'Playfair Display', serif; /* Aplica a fonte principal */
+    font-size: 2rem; /* Tamanho do título */
+    font-weight: 700; /* Define o peso da fonte, controlando a espessura das letras */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    text-align: center; /* Alinhamento central do título */
+    color: #fff; /* Escolhe uma cor para o texto */
+
+}
+
 
 /* Estilo para os parágrafos dentro das seções */
 p {
     font-size: 1.1em; /* Tamanho da fonte */
     line-height: 1.5; /* Espaçamento entre as linhas */
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilo dos links */
@@ -153,8 +183,12 @@ button:hover {
   background-color: #2980b9; /* Mudando a cor de fundo ao passar o mouse */
 }
 
+/* Rodapé */
 .footer {
-    text-align: center;
+    display: flex; /* Ativa o modelo de layout Flexbox, permitindo organizar e alinhar os itens facilmente */
+    justify-content: center; /* Centraliza os itens horizontalmente dentro do container flex */
+    align-items: center; /* Alinhamento central dos itens */
 }
+
 
 
