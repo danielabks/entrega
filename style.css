@@ -155,6 +155,59 @@ a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
+/* Estilo para o container do footer */
+.footer {
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    font-family: Arial, sans-serif; /* Fonte */
+  }
+  
+  /* Estilo para os ícones sociais */
+  .social-icons a {
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    color: #fff; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    transition: color 0.3s ease; /* Efeito de transição */
+  }
+  
+  /* Alteração ao passar o mouse nos ícones */
+  .social-icons a:hover {
+    color: #007bff; /* Cor ao passar o mouse */
+  }
+  
+  /* Estilo para o texto de direitos reservados */
+  .footer p {
+    margin-top: 15px; /* Espaço acima do texto */
+    font-size: 14px; /* Tamanho da fonte */
+  }
+/* Estilo para o container de pesquisa */
+.search-container {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    align-items: center; /* Alinha verticalmente */
+    border: 1px solid #ddd; /* Define a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 5px; /* Espaçamento interno */
+    width: 300px; /* Largura da barra */
+}
+
+/* Estilo para a barra de pesquisa */
+.search-bar {
+    border: none; /* Remove borda do input */
+    outline: none; /* Remove o outline */
+    flex-grow: 1; /* Faz a barra ocupar o máximo de espaço disponível */
+    padding: 5px; /* Espaçamento interno */
+}
+
+.search-icon {
+    width: 35px; /* Define a largura do ícone */
+    height: 35px; /* Define a altura do ícone */
+    margin-left: 5px; /* Espaço entre a barra e o ícone */
+    cursor: pointer; /* Cursor tipo pointer */
+}  
+  
+  
 /* Estilo do container dos botões */
 .button-container {
   display: table-row; /* Ativando o grid para os botões */
