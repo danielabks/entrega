@@ -1,113 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <!-- Meta charset UTF-8 para suportar caracteres especiais -->
-    <meta charset="UTF-8" />
-    <!-- Meta tag para tornar o site responsivo em diferentes dispositivos -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Título da página que aparece na aba do navegador -->
-    <title>Portfólio</title>
-    <!-- Link para o Bootstrap para estilização rápida -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Link para o arquivo de estilo personalizado -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Importa a fonte Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Importa a fonte Playfair Display -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Meta tags, estilos etc. -->
-    <link rel="icon" href="imagens/letrad.jpg" type="image/png">
-			
-			
-			
-		
+<html lang="pt-BR">
 
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Daniel Abecassis Figueiredo, desenvolvedor júnior especializado em HTML, CSS, JavaScript e frameworks modernos. Veja projetos e mais sobre mim.">
+  <meta name="keywords" content="portfólio, desenvolvimento web, HTML, CSS, JavaScript, Bootstrap, desenvolvedor júnior">
+  <meta name="author" content="Daniel Abecassis Figueiredo">
+  <meta property="og:title" content="Portfólio de Daniel Abecassis Figueiredo">
+  <meta property="og:description" content="Portfólio de Daniel Abecassis Figueiredo, apresentando projetos de desenvolvimento web com HTML, CSS, Bootstrap e muito mais.">
+  <meta property="og:image" content="imagens/letrad.jpg">
+  <meta property="og:url" content="https://www.seuportifolio.com">
+  <meta name="robots" content="index, follow">
+  
+  <title>Portfólio - Projeto 2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="imagens/letrad.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="canonical" href="https://www.seuportifolio.com">
 
-  <body>
-    <!-- Cabeçalho da página -->
-    <header>
-      <table width="100%">
-        <tr>
-          <!-- Nome do usuário alinhado à esquerda -->
-          <td>
-            <h1>Daniel Abecassis Figueiredo</h1>
-          </td>
-          <!-- Caixa de pesquisa alinhada à direita -->
-          <td style="text-align: right">
-            <input type="text" placeholder="Pesquisar..." />
-            <img class="search-icon" src="imagens/lupa.JPG" alt="Lupa">
+</head>
 
-
-
-          </td>
-        </tr>
-      </table>
-    </header>
-
-    <!-- Contêiner de botões de navegação -->
-    <div class="button-container">
-      <button type="button" class="btn btn-Home">Home</button>
-      <button type="button" class="btn btn-Sobre">Sobre</button>
-      <button type="button" class="btn btn-Serviços">Serviços</button>
-      <button type="button" class="btn btn-Resumo">Resumo</button>
-      <button type="button" class="btn btn-Github">Github</button>
-    </div>
-
-    <!-- Conteúdo Principal -->
-    <main class="container">
-      <!-- Seções principais de conteúdo -->
-      <section class="box">HTML</section>
-      <section class="box">CSS</section>
-      <section class="box">Node.Js</section>
-
-      <!-- Seção de boas-vindas -->
-      <section>
-        <h2>Sejam Bem-Vindos!</h2>
-        <h3>Aqui você encontra tudo sobre o meu Portfólio</h3>
-      </section>
-
-      <!-- Seções detalhadas -->
-      <section id="html">
-        <h4>HTML</h4>
-        <p>
-          HTML é uma série de tags que descrevem as diferentes partes de uma
-          página da web... <a href="html.html">Leia mais</a>
-        </p>
-      </section>
-
-      <section id="css">
-        <h4>CSS</h4>
-        <p>
-          CSS (Folha de Estilo em Cascata) é o código que você usa para dar
-          estilo à sua página Web... <a href="css.html">Leia mais</a>
-        </p>
-      </section>
-
-      <!-- Links Rápidos -->
-      <section>
-        <h1>Links Rápidos</h1>
-        <ul>
-          <li class="item1">Portfólio</li>
-        </ul>
-      </section>
-    </main>
-
-    <!-- Rodapé -->
-    <footer class="footer">
-      <div class="social-icons">
-        <a href="https://www.instagram.com" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.facebook.com" target="_blank">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.twitter.com" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
+<body>
+  <!-- Cabeçalho -->
+  <header class="container py-4">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start">
+        <h1 class="fw-bold">Daniel Abecassis Figueiredo</h1>
       </div>
-      <p>2025. Todos os direitos reservados.</p>
-    </footer>
-  </body>
+      <nav class="col-md-6 text-center text-md-end">
+        <a href="#sobre" class="mx-2" title="Sobre Mim">Sobre</a>
+        <a href="#projetos" class="mx-2" title="Meus Projetos">Projetos</a>
+        <a href="#contato" class="mx-2" title="Contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container">
+    <section id="projetos" class="my-5">
+      <h2 class="text-center mb-4">Meus Projetos</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="imagens/html2.JPG" class="card-img-top" alt="Projeto HTML e CSS - Site institucional responsivo com layout semântico">
+            <div class="card-body">
+              <h5 class="card-title">Projeto HTML e CSS</h5>
+              <p class="card-text">Um site institucional criado com HTML5 e CSS3, focado em layout semântico e responsivo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="imagens/bootstrap.png" class="card-img-top" alt="Projeto com Bootstrap - Página responsiva usando grid e design moderno">
+            <div class="card-body">
+              <h5 class="card-title">Projeto com Bootstrap</h5>
+              <p class="card-text">Página responsiva utilizando o sistema de Grid do Bootstrap e design moderno.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="my-5">
+      <h2 class="text-center mb-4">Sobre Mim</h2>
+      <p class="text-center mx-auto" style="max-width: 600px;">
+        "Sou um desenvolvedor apaixonado por tecnologia e sempre em busca de evolução. Embora esteja no início da minha jornada, tenho me dedicado a aprender as linguagens e ferramentas mais atuais para criar soluções web de qualidade. Com foco em HTML, CSS e JavaScript, estou ansioso para aplicar meus conhecimentos e me desenvolver em projetos desafiadores."
+      </p>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <a href="https://github.com/seuuser" target="_blank" title="Meu GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/seuuser" target="_blank" title="Meu LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://instagram.com/seuuser" target="_blank" title="Meu Instagram"><i class="fab fa-instagram"></i></a>
+    <p>© 2025 Todos os direitos reservados.</p>
+  </footer>
+</body>
+
 </html>
