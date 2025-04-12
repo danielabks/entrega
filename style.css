@@ -1,247 +1,127 @@
-/* Animação que cria um brilho nos textos */
-@keyframes brilho {
-    0% { 
-        /* Definindo o brilho inicial do texto */
-        text-shadow: 0 0 5px #7B68EE, 0 0 10px #4B0082, 0 0 15px #7B68EE;
-    }
-    50% { 
-        /* Aumentando o brilho na metade da animação */
-        text-shadow: 0 0 20px #7B68EE, 0 0 30px #4B0082, 0 0 40px #7B68EE;
-    }
-    100% { 
-        /* Retornando ao brilho inicial */
-        text-shadow: 0 0 5px #7B68EE, 0 0 10px #4B0082, 0 0 15px #7B68EE;
-    }
-}
-
-/* Estilo para a lista não ordenada (ul) */
-ul {
-    font-size: 5px; /* Tamanho da fonte */
-    list-style-type: square; /* Estilo de lista quadrada */
-    padding: 20px; /* Espaçamento interno */
-    background-color: #f3f4; /* Cor de fundo com opacidade */
-    border-radius: 10px; /* Bordas arredondadas */
-    animation: brilho 2s infinite alternate; /* Animação de brilho */
-    color: black; /* Cor do texto */
-    font-weight: lighter; /* Peso da fonte mais leve */
-}
-
-/* Estilo para os itens da lista (li) */
-li {
-    font-family:  Helvetica, sans-serif; /* Tipo de fonte */
-    font-size: 1.2rem; /* Tamanho da fonte */
-    margin: 10px 0; /* Espaçamento entre os itens */
-    padding: 10px; /* Espaçamento interno */
-    background-color: #a9a9a9; /* Cor de fundo */
-    border: 1px solid #7B68EE; /* Borda do item */
-    border-radius: 5px; /* Bordas arredondadas */
-    animation: brilho 2s infinite alternate; /* Animação de brilho */
-}
-
-/* Estilo para os itens da lista ao passar o mouse */
-li:hover {
-    background-color: #7B68EE; /* Cor de fundo ao passar o mouse */
-    cursor: pointer; /* Cursor tipo pointer */
-    transition: 0.3s ease; /* Transição suave */
-}
-
-/* Estilo para o terceiro item da lista */
-li:nth-child(3) {
-    background-color: #f8d7; /* Cor de fundo especial para o terceiro item */
-    color: #721c24; /* Cor do texto */
-    font-weight: bold; /* Deixa o texto em negrito */
-}
-
-/* Estilo do corpo da página */
-body {
-    display: grid; /* Usando grid para layout */
-    grid-template-columns: 1fr; /* Uma única coluna */
-    gap: 20px; /* Espaçamento entre os itens */
-    background-color: #696969; /* Cor de fundo */
-    color: #f8f8f8; /* Cor do texto */
-    padding: 20px; /* Espaçamento interno */
-    font-family: Arial, sans-serif; /* Fonte do corpo */
-}
-
-/* Estilo das caixas de conteúdo (box) */
-.box {
-    text-align: center; /* Alinhamento do texto ao centro */
-    font-family: Open Sans, sans-serif; /* Fonte para o conteúdo */
-    font-size: 1.2rem; /* Tamanho da fonte */
-    margin: 10px 0; /* Espaçamento entre as caixas */
-    padding: 10px; /* Espaçamento interno */
-    background-color: #a9a9a9; /* Cor de fundo */
-    border: 1px solid #7B68EE; /* Borda do conteúdo */
-    border-radius: 5px; /* Bordas arredondadas */
-    animation: brilho 2s infinite alternate; /* Animação de brilho */
-    cursor: pointer; /* Cursor tipo pointer */
-}
-
-/* Estilo do main */
-main {
-    display: flex; /* Usando flexbox para layout */
-    display: -moz-grid; /* Antiga sintaxe de grid para Firefox */
-    grid-template-columns: repeat(2, 1fr); /* Duas colunas de tamanho igual */
-    gap: 5px; /* Espaçamento entre os itens */
-    max-width: 1500px; /* Largura máxima */
-    width: 100%; /* Largura total */
-    flex-direction: column; /* Direção da flexbox invertida */
-    padding: 20px; /* Espaçamento interno */
-    align-items: center; /* Alinhamento central dos itens */
-    text-align: center; /* Alinhamento do texto */
-    border-radius: 10px; /* Bordas arredondadas */
-}
-
-/* Estilo das seções dentro do main */
-section {
-    background-color: rgb(78, 78, 78); /* Cor de fundo preta */
-    width: 80%; /* Largura da seção */
-    max-width: 600px; /* Largura máxima da seção */
-    margin: 20px 0; /* Margem entre as seções */
-}
-
-section h1 {
-    font-size: 2.5rem; /* Tamanho do título */
-    font-family:'Montserrat', sans-serif; /* Fonte para o conteúdo */
-    margin-bottom: 10px; /* Espaço abaixo do título */
-    text-align: center; /* Alinhamento do texto */
-    align-items: center; /* Alinhamento central dos itens */
-}
-
-h2 {
-    font-size: 2.5rem; /* Tamanho do título */
-    font-family: 'Raleway', sans-serif;
-    margin-bottom: 10px; /* Espaço abaixo do título */
-    text-align: center; /* Alinhamento central do título */
-    align-items: center; /* Alinhamento central dos itens */
-}
-
-h3 {
-    font-family: 'Raleway', sans-serif; /* Define a fonte utilizada para o texto como 'Raleway', com uma alternativa sans-serif caso 'Raleway' não esteja disponível */
-    text-align: center; /* Alinhamento central do título */
-    font-weight: 500; /* Define o peso da fonte, controlando a espessura das letras */
-    font-size: 1.4rem; /* Tamanho do título */
-}
-
-/* Estilo para os títulos dentro das seções */
-h4 {
-    font-family: 'Playfair Display', serif; /* Aplica a fonte principal */
-    font-size: 2rem; /* Tamanho do título */
-    font-weight: 700; /* Define o peso da fonte, controlando a espessura das letras */
-    margin-bottom: 10px; /* Espaço abaixo do título */
-    text-align: center; /* Alinhamento central do título */
-    color: #fff; /* Escolhe uma cor para o texto */
-
-}
-
-
-/* Estilo para os parágrafos dentro das seções */
-p {
-    font-size: 1.1em; /* Tamanho da fonte */
-    line-height: 1.5; /* Espaçamento entre as linhas */
+/* Reset básico e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #292929;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #7B68EE;
+    text-shadow: 0 0 10px #4B0082;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-/* Estilo dos links */
-a {
-    color: #007bff; /* Cor do link */
-    text-decoration: none; /* Remove o sublinhado do link */
-    font-weight: bold; /* Deixa o texto do link em negrito */
-}
-
-/* Estilo dos links ao passar o mouse */
-a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-}
-
-/* Estilo para o container do footer */
-.footer {
-    text-align: center; /* Centraliza o conteúdo */
-    padding: 20px; /* Espaçamento interno */
-    background-color: #333; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    font-family: Arial, sans-serif; /* Fonte */
+    gap: 30px;
+    margin-top: 10px;
   }
   
-  /* Estilo para os ícones sociais */
-  .social-icons a {
-    margin: 0 10px; /* Espaçamento entre os ícones */
-    color: #fff; /* Cor dos ícones */
-    font-size: 24px; /* Tamanho dos ícones */
-    transition: color 0.3s ease; /* Efeito de transição */
+  nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
   }
   
-  /* Alteração ao passar o mouse nos ícones */
-  .social-icons a:hover {
-    color: #007bff; /* Cor ao passar o mouse */
+  nav ul li a:hover {
+    color: #7B68EE;
   }
   
-  /* Estilo para o texto de direitos reservados */
-  .footer p {
-    margin-top: 15px; /* Espaço acima do texto */
-    font-size: 14px; /* Tamanho da fonte */
+  section {
+    padding: 30px 20px;
+    background-color: #2c2c2c;
+    margin-bottom: 30px;
+    border-radius: 10px;
   }
-/* Estilo para o container de pesquisa */
-.search-container {
-    display: flex; /* Usa flexbox para alinhar os itens */
-    align-items: center; /* Alinha verticalmente */
-    border: 1px solid #ddd; /* Define a borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    padding: 5px; /* Espaçamento interno */
-    width: 300px; /* Largura da barra */
-}
-
-/* Estilo para a barra de pesquisa */
-.search-bar {
-    border: none; /* Remove borda do input */
-    outline: none; /* Remove o outline */
-    flex-grow: 1; /* Faz a barra ocupar o máximo de espaço disponível */
-    padding: 5px; /* Espaçamento interno */
-}
-
-.search-icon {
-    width: 35px; /* Define a largura do ícone */
-    height: 35px; /* Define a altura do ícone */
-    margin-left: 5px; /* Espaço entre a barra e o ícone */
-    cursor: pointer; /* Cursor tipo pointer */
-}  
   
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    border-bottom: 2px solid #7B68EE;
+    padding-bottom: 10px;
+  }
   
-/* Estilo do container dos botões */
-.button-container {
-  display: table-row; /* Ativando o grid para os botões */
-  grid-template-columns: repeat(3, 1fr); /* Definindo 3 colunas de tamanho igual */
-  gap: 10px; /* Espaçamento entre os botões */
-  justify-items: center; /* Centralizando os itens dentro do grid */
-  align-items: center; /* Alinhando os itens verticalmente */
-  padding: 20px; /* Espaçamento interno */
-  max-width: 500px; /* Largura máxima */
-  margin: 0 auto; /* Centralizando o container na página */
-}
-
-/* Estilo para os botões */
-button {
-  padding: 10px 20px; /* Espaçamento interno do botão */
-  background-color: #3498db; /* Cor de fundo do botão */
-  color: white; /* Cor do texto */
-  border: none; /* Removendo borda */
-  border-radius: 5px; /* Bordas arredondadas */
-  cursor: pointer; /* Cursor tipo pointer */
-  font-size: 16px; /* Tamanho da fonte */
-}
-
-/* Estilo para os botões ao passar o mouse */
-button:hover {
-  background-color: #2980b9; /* Mudando a cor de fundo ao passar o mouse */
-}
-
-/* Rodapé */
-.footer {
-    display: flex; /* Ativa o modelo de layout Flexbox, permitindo organizar e alinhar os itens facilmente */
-    justify-content: center; /* Centraliza os itens horizontalmente dentro do container flex */
-    align-items: center; /* Alinhamento central dos itens */
-}
-
-
-
+  .card  {
+    background-color: #444;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  .card img {
+    background-color: #444 !important;
+    border: none;
+    max-height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: #7B68EE;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #d3d3d3;
+  }
+  
+  footer {
+    background-color: #292929;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  footer p {
+    margin: 0;
+    color: #ccc;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .card-title {
+      font-size: 1.2rem;
+    }
+  
+    .card-text {
+      font-size: 0.9rem;
+    }
+  }
