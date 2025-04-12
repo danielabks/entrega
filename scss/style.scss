@@ -1,73 +1,145 @@
 // Variáveis
+$cor-fundo: #1f1f1f;
+$cor-texto: #f0f0f0;
+$cor-header: #292929;
+$cor-secao: #2c2c2c;
+$cor-card: #444;
+$cor-destaque: #7B68EE;
+$cor-hover: #4B0082;
+$fonte-principal: 'Montserrat', sans-serif;
 
-$cor-primaria: #ff6f61;
-$cor-secundaria: #ffe066;
-$espacamento: 20px;
-
-// Mixin para bordas arredondadas
-
-@mixin borda-arredondada($raio) {
+// Mixins
+@mixin borda-arredondada($raio: 10px) {
   border-radius: $raio;
-  border: 2px solid $cor-primaria;
 }
 
-// Estilo base com Extend
-
-.btn {
-    padding: $espacamento;
-    margin: calc($espacamento / 2);
-    text-align: center;
+@mixin sombra-suave {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-// Condicional
-$modo: "claro";
+// Reset básico e fonte
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    @if $modo == "claro" {
-        background: #fff;
-        color: #333;
-    } @else {
-        background: #333;
-        color: #fff;
-    }
+  font-family: $fonte-principal;
+  background-color: $cor-fundo;
+  color: $cor-texto;
+  padding: 20px;
 }
-
-// Estilo do btn
-.btn{
-    @extend .btn;
-    @include borda-arredondada(10px);
-}
-
-// loop para tamanhos
-@for $i from 1 through 3 {
-    .cupcake:ntn-child(#{$i}) {
-        font-size: 16px + $i * 2;
-    }
-}
-
-
-// Mapa de cores pros cupcakes
-$cores-cupcakes: (
-    "choco": #8b4513,
-    "morango": #c72929,
-    "baunilha": #dbdba4
-);
-
-// @each com Mapas para aplicar as cores
-@each $sabor, $cor in $cores-cupcakes {
-    .cupcake-#{$sabor} {
-        background-color: $cor;
-    }
-}
-
-// header com um toque especial
 
 header {
-    background: $cor-secundaria;
-    padding: $espacamento;
-    text-align: center;
-    h1 {
-        color: $cor-primaria;
-        @include borda-arredondada(5px);
+  background-color: $cor-header;
+  padding: 20px 0;
+  text-align: center;
+  @include borda-arredondada;
+  margin-bottom: 30px;
+
+  h1 {
+    font-size: 2.5rem;
+    color: $cor-destaque;
+    text-shadow: 0 0 10px $cor-hover;
+  }
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+
+  li a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $cor-destaque;
     }
+  }
+}
+
+section {
+  padding: 30px 20px;
+  background-color: $cor-secao;
+  margin-bottom: 30px;
+  @include borda-arredondada;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  border-bottom: 2px solid $cor-destaque;
+  padding-bottom: 10px;
+}
+
+.card {
+  background-color: $cor-card;
+  border: none;
+  @include borda-arredondada(15px);
+  overflow: hidden;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+    @include sombra-suave;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-body {
+    padding: 20px;
+
+    .card-title {
+      font-size: 1.5rem;
+      color: $cor-destaque;
+      margin-bottom: 10px;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: #d3d3d3;
+    }
+  }
+}
+
+footer {
+  background-color: $cor-header;
+  padding: 20px;
+  text-align: center;
+  @include borda-arredondada;
+  margin-top: 30px;
+
+  p {
+    margin: 0;
+    color: #ccc;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card-body {
+    .card-title {
+      font-size: 1.2rem;
+    }
+
+    .card-text {
+      font-size: 0.9rem;
+    }
+  }
 }
